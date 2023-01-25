@@ -13,7 +13,7 @@ public class Sondaggio_OS {
 		int SommaL;
 		
 		
-		int Studenti = 100;
+		int Studenti = 50;
 		
 		int StudentiWindows; 
 		int StudentiApple; 
@@ -40,6 +40,9 @@ public class Sondaggio_OS {
 		System.out.println("Percentuale studenti Windows - " + SommaW + "%");
 		System.out.println("Percentuale studenti Apple - " + SommaA + "%");
 		System.out.println("Percentuale studenti Linux - " + SommaL + "%");
+		
+		Win.close();
+		
 	}
 
 	
