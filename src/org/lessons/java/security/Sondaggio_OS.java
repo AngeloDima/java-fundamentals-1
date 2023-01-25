@@ -4,46 +4,35 @@ import java.util.Scanner;
 
 public class Sondaggio_OS {
 
-	public static void main(String[] args) {
-		System.out.println("Sondaggio");
-		
-		
-		int SommaW;
-		int SommaA;
-		int SommaL;
-		
-		
-		int Studenti = 50;
-		
-		int StudentiWindows; 
-		int StudentiApple; 
-		int StudentiLinux;
-		
-		
-		Scanner Win=new Scanner(System.in);
-		System.out.print("Numero Studenti Windows");
-		
-		StudentiWindows=Win.nextInt();
-		SommaW = Studenti * StudentiWindows / 100;
-		
-		
-		System.out.print("Numero Studenti Apple");
-		
-		StudentiApple=Win.nextInt();
-		SommaA = Studenti * StudentiApple / 100;
-		
-		System.out.print("Numero Studenti Linux");
-		StudentiLinux=Win.nextInt();
-		SommaL = Studenti * StudentiLinux / 100;
-		
-	
-		System.out.println("Percentuale studenti Windows - " + SommaW + "%");
-		System.out.println("Percentuale studenti Apple - " + SommaA + "%");
-		System.out.println("Percentuale studenti Linux - " + SommaL + "%");
-		
-		Win.close();
-		
-	}
+    public static void main(String[] args) {
+        System.out.println("Sondaggio");
+        
+        int StudentiWindows; 
+        int StudentiApple; 
+        int StudentiLinux;
+        int Studenti = 50;
+        double SommaW;
+        double SommaA;
+        double SommaL;
 
-	
+        Scanner Win=new Scanner(System.in);
+        System.out.print("Numero Studenti Windows: ");
+        StudentiWindows=Win.nextInt();
+
+        System.out.print("Numero Studenti Apple: ");
+        StudentiApple=Win.nextInt();
+
+        System.out.print("Numero Studenti Linux: ");
+        StudentiLinux=Win.nextInt();
+
+        SommaW = (StudentiWindows / (double) Studenti) * 100;
+        SommaA = (StudentiApple / (double) Studenti) * 100;
+        SommaL = (StudentiLinux / (double) Studenti) * 100;
+        
+        System.out.println("Percentuale studenti Windows - " + SommaW + "%");
+        System.out.println("Percentuale studenti Apple - " + SommaA + "%");
+        System.out.println("Percentuale studenti Linux - " + SommaL + "%");
+
+        Win.close();
+    }
 }
