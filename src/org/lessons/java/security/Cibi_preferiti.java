@@ -5,23 +5,10 @@ public class Cibi_preferiti {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		String[] CibiPreferiti = {"Pizza", "Panino con carne di cavallo", "gelato", "Patate" ,"Pollo"};
+		String[] cibiPreferiti = {"Pizza", "Panino con carne di cavallo", "gelato", "Patate" ,"Pollo"};
 		
-		//System.out.println("Lunghezza Array: " + CibiPreferiti.length + " elementi");
-		//System.out.println("Cibo super preferito " + CibiPreferiti[0]);
-		//System.out.println("Cibo meno preferito " + CibiPreferiti[4]);
+		System.out.println(cibiPreferiti[0]);
+		System.out.println(cibiPreferiti[cibiPreferiti.length - 1]);
 
-		for (int i = 0; i < CibiPreferiti.length; i++) {
-			 if (i == 0) {
-				 System.out.println("Cibo super preferito: " + CibiPreferiti[i]);
-			     
-		      }
-	     }
-		for (int i = 0; i < CibiPreferiti.length; i++) {
-		    if (i == CibiPreferiti.length - 1) {
-		        System.out.println("Cibo meno preferito: " + CibiPreferiti[i]);
-		        
-		    }
-		}
   }
 }
